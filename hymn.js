@@ -34,6 +34,10 @@ router.post("", (req, res, next) => {
     })
   });
 
+  router.get("",(req,res,next) => {
+    res.send("Live and Okay");
+  })
+
   router.get('/count',(req,res,next) => {
       Song.estimatedDocumentCount()
       .then(result => {
